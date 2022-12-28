@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+body{
+    background-color: rgb(12, 0, 39) !important;
+}
+.fade-in {
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s;
+  }
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+*{
+    font-family: 'Arvo', serif;
+    
+}
+.navbar{
+    padding: 10px 10px 10px 10px !important;
+    text-align: center;
+}
+.nav-link{
+    font-size: 20px !important;
+    color: #000000 !important;
+    font-weight: 1000;
+    margin-right: 26px !important;
+    transition: all 0.1s;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.nav-link:hover{
+    color:#b537c5 !important;
+    transform: scale(1.1);
+
+}
+.btn{
+    margin-top: 20px;
+    width: 200px;
+    border-radius: 30px !important;
+    font-size:20px !important;
+    background-color: white !important;
+    transition: all 0.1s !important;
+    color: black !important;
+}
+.btn:hover{
+    background-color: #b537c5 !important;
+    color: white !important;
+    border-color:#b537c5!important;
+    transform: scale(1.1);
+}
+.textdeco:hover{
+  color: white;
+  text-decoration: none;
+}
+@media only screen and (min-width: 1300px){
+    .nav-link:hover{
+        transform: scale(1.1);
+        background-color: #b537c5 !important;
+        color: rgb(255, 255, 255) !important;
+    }
+  }
+.navbar-toggler{
+    color: white !important;
+    border-color: white !important;
+}
+
+#sec2{
+    margin-top: 0px;
+}
+.heading{
+    padding-top: 40px;
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-bottom: 30px;
+}
+.instruction{
+    font-size: 12px;
+    padding-bottom: 0px;
+    margin: 0px;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    left: 1;
+    transform: translateX(-30px);
+}
+.Inputbox{
+    position: relative;
+    font-size: 20px;    
+    text-align: center;
+    margin-bottom: 43px;
+    
+}
+.allinput{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+::placeholder {
+    color: rgb(198, 181, 181);
+  }
+.Inputbox input{
+    padding-left: 10px !important;
+    outline: none;
+    
+}
+.Inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 200px 2px 10px;
+    pointer-events: none;
+    transition: 0.5s;
+    padding: 0px 10px;
+    border-radius: 10px;
+    transform: translateX(1px) translateY(7px);
+    color: rgb(165, 158, 165);
+    
+}
+input,select{
+    height: 45px;
+    width: 400px;
+    border-radius: 10px;
+    border-color: rgb(12, 0, 39) !important;
+}
+option{
+    height: 10px;
+    text-align: center;
+}
+
+.Inputbox input:valid ~ span,
+.Inputbox input:focus ~ span
+{
+    transform: translateX(-6px) translateY(-29px);
+    font-size: 1.2rem;
+    padding: 0px 10px;
+    transition: .5s;
+    color: #e100ff;
+    border-radius: 10px;
+}

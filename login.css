@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+
+*{
+    font-family: 'Hammersmith One', sans-serif;
+}
+body{
+    background-image: url(images/9.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    padding: 6% 0 0 0;
+}
+.rounded{
+    border-radius: 5% !important;
+}
+.wrapper{
+    padding:0 0 100px;
+    min-height: 100%;
+}
+.wrapper .logo img{
+    max-width:40%;
+}
+.wrapper input{
+    background-color: var(--light-white);
+    border-color: var(--light-white);
+    color: var(--gray); 
+}
+.wrapper input:focus{ 
+    box-shadow: none;
+}
+.wrapper .submit_btn{
+    padding:15px;
+    font-weight: 500;
+}
+.wrapper .login_with{
+    padding:15px;
+    font-size: 15px;
+    font-weight: 500;
+    transition:0.3s ease-in-out;
+}
+.wrapper .submit_btn:focus,
+.wrapper .login_with:focus{
+    box-shadow: none;
+}
+.wrapper .login_with:hover{
+    background-color:var(--gray-1);
+    border-color:var(--gray-1);
+}
+.wrapper .login_with img{
+    max-width: 8%;
+}
